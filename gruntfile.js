@@ -16,6 +16,12 @@ module.exports = function(grunt){
                 cwd: 'client/views',
                 src: '*.html',
                 dest: 'server/public/assets/views'
+              },
+            css: {
+                expand: true,
+                cwd: 'client/styles',
+                src: '*.css',
+                dest: 'server/public/assets/styles'
               }
             }
     });
