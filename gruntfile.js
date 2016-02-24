@@ -22,6 +22,15 @@ module.exports = function(grunt){
                 cwd: 'client/styles',
                 src: '*.css',
                 dest: 'server/public/assets/styles'
+              },
+            angular: {
+                expand: true,
+                cwd: 'node_modules',
+                src: [
+                  'angular/angular.min.js',
+                  'angular/angular.min.js.map'
+                ],
+                dest: 'server/public/vendors'
               }
             }
     });
