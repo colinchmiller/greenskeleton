@@ -17,6 +17,12 @@ module.exports = function(grunt){
                 src: '*.html',
                 dest: 'server/public/assets/views'
               },
+            htmlRoutes: {
+                expand: true,
+                cwd: 'client/views/routes',
+                src: '*.html',
+                dest: 'server/public/assets/views/routes'
+            },
             css: {
                 expand: true,
                 cwd: 'client/styles',
@@ -28,7 +34,9 @@ module.exports = function(grunt){
                 cwd: 'node_modules',
                 src: [
                   'angular/angular.min.js',
-                  'angular/angular.min.js.map'
+                  'angular/angular.min.js.map',
+                  'angular-route/angular-route.min.js',
+                  'angular-route/angular-route.min.js.map'
                 ],
                 dest: 'server/public/vendors'
               }

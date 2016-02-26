@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mainApp">
 <head>
   <meta  charset="UTF-8">
   <title>Houseplant Assistant</title>
 
   <link rel="stylesheet" href="./assets/styles/stylesheet.css">
 
+  <script type="text/javascript" src="./vendors/angular/angular.min.js"></script>
+  <script type="text/javascript" src="./vendors/angular-route/angular-route.min.js"></script>
   <script type="text/javascript" src="./assets/scripts/app.min.js"></script>
 </head>
 
-<h1>Green Skeleton Houseplant Assistant</h1>
+<body ng-controller="TestController">
+  <h1>Green Skeleton Houseplant Assistant</h1>
+
+  {{test}}
+</body>
 
 </html>
